@@ -90,7 +90,7 @@ gulp default
 ```
 Runs Bower and readies all of the CSS.
 
-Wath
+Watch
 -------
 ```
 gulp watch

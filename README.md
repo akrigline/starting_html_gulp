@@ -60,23 +60,39 @@ First runs ``bowerfiles``, then gathers all of the js files and runs jsHint. The
 
 Building
 --------
-```gulp buildjs```
-```gulp buildcss```
-```gulp buildhtml```
-```gulp buildimg```
-```gulp buildfonts```
+```
+gulp buildjs
+```
+```
+gulp buildcss
+```
+```
+gulp buildhtml
+```
+```
+gulp buildimg
+```
+```
+gulp buildfonts
+```
 These all run any tasks related to what they're building, then gathers those files together in the ``buildDir`` folder.
 
-```gulp build```
+```
+gulp build
+```
 Runs all of the ``build**`` tasks.
 
 
 Default
 -------
-```gulp default```
+```
+gulp default
+```
 Runs Bower and readies all of the CSS.
 
 Wath
 -------
-```gulp watch``
+```
+gulp watch
+```
 Watches the Sass directory for any changed files, then runs the ``uncssstyle`` function.

@@ -37,7 +37,7 @@ Runs bower based on the bower.json.
 ```
 gulp bowerfiles
 ```
-Grabs all ``.js`` javascript files from bower and puts them into your ``jsDir``
+Grabs all ``.js`` javascript files from bower, concats them, and puts them into your ``jsDir``
 
 CSS & SCSS
 ----------
@@ -56,7 +56,7 @@ JS
 ```
 gulp js
 ```
-First runs ``bowerfiles``, then gathers all of the js files and runs jsHint. There is an ingnore file in the root of the project folder ``.jshintignore``. It's currently set to ignore everything in the ``vendor`` folder under ``js``.
+First runs ``bowerfiles``, then gathers all of the js files and runs jsHint. There is an ingnore file in the root of the project folder ``.jshintignore``. It's currently set to ignore everything in the ``vendor`` folder under ``js``. After that, it concats all of the js files you have and puts them into one ``app.js`` file.
 
 Building
 --------

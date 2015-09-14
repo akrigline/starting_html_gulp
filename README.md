@@ -2,6 +2,15 @@ Intro
 =====
 This is a customized starting file for an HTML web project. It's some frankenstein's monster of npm, bower, compass, and gulp. I'm still learning how these things all play together so it's probably messy.
 
+Based on:
+* HTML5 Boilerplate
+* Bootstrap
+* jQuery
+* Gulp
+* Compass (SASS)
+* Bower
+* who knows what else...
+
 Installation
 ------------
 After duplicating the folder, run:

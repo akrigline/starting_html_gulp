@@ -64,14 +64,14 @@ gulp.task('js', ['bowerfiles'], function(){
 	gulp.src(config.jsDir + '/**/*.js')
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))
-		.pipe(uglify())
-		.pipe(concat('app.js'))
 		.pipe(gulp.dest(config.jsDir))
 });
 
 //Build Functions
 gulp.task('buildjs', ['js'], function() {
-	gulp.src(config.jsDir + '/app.js')
+	gulp.src([config.jsDir + '/main.js', config.jsDir + '/vendor/bowerfiles.js'])
+		.pipe(uglify())
+		.pipe(concat('app.js'))
 		.pipe(gulp.dest(config.buildDir + '/js'))
 });
 
